@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>noname</groupId>
-	<artifactId>willName</artifactId>
+	<artifactId>CRM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>willName</name>
+	<name>CRM</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -31,7 +31,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
-			<scope>test</scope>
+			
 		</dependency>
 <dependency>
     <groupId>org.slf4j</groupId>
@@ -65,7 +65,7 @@
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-picocontainer</artifactId>
 			<version>1.2.5</version>
-			<scope>test</scope>
+			
 		</dependency>
 
 		<dependency>
@@ -146,15 +146,7 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
 			<version>4.4.13</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-junit4 -->
-		<dependency>
-			<groupId>com.intuit.karate</groupId>
-			<artifactId>karate-junit4</artifactId>
-			<version>0.9.4</version>
-			<scope>test</scope>
-		</dependency>
+		</dependency>	
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
