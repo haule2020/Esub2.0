@@ -1,12 +1,12 @@
 package managers;
 
 import org.openqa.selenium.WebDriver;
-import pageObjects.eClaimSubmission;
+import pageObjects.CrmPage;
 
 public class PageObjectManager {
 
 	private WebDriver driver;
-	private eClaimSubmission eClaimSubmitPage;	
+	private CrmPage eClaimSubmitPage;	
 	private driverUtilities  baseDriver;
 
 	public PageObjectManager(WebDriver driver) {
@@ -19,8 +19,8 @@ public class PageObjectManager {
 	}	
 	
 	
-	public eClaimSubmission geteClaimSubmissionPage() throws Exception {
-		return (eClaimSubmitPage == null) ? eClaimSubmitPage = new eClaimSubmission(driver)
+	public CrmPage geteClaimSubmissionPage() throws Exception {
+		return (eClaimSubmitPage == null) ? eClaimSubmitPage = new CrmPage(driver)
 				: eClaimSubmitPage;
 
 	}

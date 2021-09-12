@@ -9,9 +9,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(snippets = SnippetType.CAMELCASE,
 		strict = true,
-		features = "C:\\Esubmition2021\\Data\\TestSteps.feature", glue = "stepDefinitions",tags={"@Esub"}		
+		features = "testCases/eClaim_Feature/Crm.feature", glue = "stepDefinitions"	
 		)
 
-public class eClaim_Test  {
+public class CrmTest  {
 
 }

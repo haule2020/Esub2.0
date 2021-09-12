@@ -1,18 +1,22 @@
 package pageObjects;
 
+import java.net.URL;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import managers.PageObjectManager;
 
-public class eClaimSubmission {
+public class CrmPage {
 
 	private WebDriver driver;
 	private PageObjectManager wd;
 
 	// Constructor
-	public eClaimSubmission(WebDriver driver) throws Exception {
+	public CrmPage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		wd = new PageObjectManager(driver);
@@ -59,8 +63,11 @@ public class eClaimSubmission {
 
 	public void launchPage(String pageURL) throws Exception {
 
-		driver.manage().deleteAllCookies();
 		driver.get(pageURL);
+		
+		Thread.sleep(2000);
+		
+		driver.quit();
 	}
 
 	public void CheckAgreeCheckbox() throws Exception {
@@ -105,10 +112,7 @@ public class eClaimSubmission {
 	}
 
 	
-	public void mkdir(String outputPath) throws Exception {
-		wd.getdriverMethod().mkdir(outputPath);
-	}
-	
+
 	public void input_ID(String idValue) throws Exception {
 		wd.getdriverMethod().writeText(id, idValue);
 		Thread.sleep(1000);

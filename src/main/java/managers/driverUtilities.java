@@ -216,16 +216,7 @@ public class driverUtilities {
 			return shots;
 	}
 	
-	
-	// mrkdir
-	public void mkdir(String outputPath) {
-		try {
-			File output = new File(outputPath);
-			output.mkdir();
-		} catch (Exception e) {
-		}
-	}
-		
+
 	// mrkdir
 	public void select(By elementBy,String value) throws Exception {		
 		WebElement element = driver.findElement(elementBy);
